@@ -1,0 +1,60 @@
+{
+    "name": "neo/pusher-beams",
+    "description": "Pusher Beams is a push notification service from Pusher.",
+    "keywords": [
+        "laravel",
+        "pusher",
+        "push-notifications",
+        "notification",
+        "push",
+        "beams",
+        "neo"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/neoighodaro/pusher-beams",
+    "support": {
+        "issues": "https://github.com/neoighodaro/pusher-beams/issues",
+        "source": "https://github.com/neoighodaro/pusher-beams"
+    },
+    "authors": [
+        {
+            "name": "Neo Ighodaro",
+            "email": "neo@creativitykills.co"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/events": "5.5.* || 5.6.* || 5.7.* || ^6.0 || ^7.0",
+        "illuminate/notifications": "5.5.* || 5.6.* || 5.7.* || ^6.0 || ^7.0",
+        "illuminate/queue": "5.5.* || 5.6.* || 5.7.* || ^6.0 || ^7.0",
+        "illuminate/support": "5.5.* || 5.6.* || 5.7.* || ^6.0 || ^7.0",
+        "pusher/pusher-push-notifications": "^1.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.5",
+        "phpunit/phpunit": "7.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Neo\\PusherBeams\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Neo\\PusherBeams\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Neo\\PusherBeams\\PusherBeamsServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
